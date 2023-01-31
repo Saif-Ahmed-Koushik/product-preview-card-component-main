@@ -1,0 +1,100 @@
+:root{
+    --color-primary: hsl(158, 36%, 37%);
+    --color-primary-2: hsl(158, 36%, 20%);
+    --color-bg: hsl(30, 38%, 92%);
+    --color-h: hsl(212, 21%, 14%);
+    --color-p: hsl(228, 12%, 48%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+/* Common styles */
+
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    place-content: center;
+    background-color: var(--color-bg);
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+p{
+    font-size: 0.875rem;
+    color: var(--color-p);
+}
+
+/* Card */
+
+.card{
+    max-width: 610px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color-white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    justify-content: center;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    gap: 0.7rem;
+    color: var(--color-white);
+    font-weight: 700px;
+    font-size: 14px;
+}
+
+button img{
+    width: 2rem;
+}
+
+.cart__img{
+    width: 2rem;
+}
+
+.perfume{
+    letter-spacing: 0.3rem;
+}
+
+.discount__price{
+    color: var(--color-primary);
+}
+
+button:hover{
+    background-color: var(--color-primary-2);
+}
